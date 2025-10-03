@@ -1,0 +1,155 @@
+/* Base style for the body */
+.body-custom {
+  font-family: 'Arial', sans-serif;
+  background-color: #000; /* general dark background */
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.custom-navbar {
+  background-color: #deff21;
+}
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+  color: #000;
+}
+.custom-navbar .nav-link:hover { color: #3a3a3a; }
+
+/* Instagram button */
+.btn-instagram {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  transition: 0.3s;
+}
+.btn-instagram:hover { opacity: 0.8; }
+
+/* Banner */
+.banner-title { margin-top: 50px; color: #deff21; }
+#banner-subtitle { color: rgba(222, 255, 33, 0.7); }
+
+/* Street Credibility Section */
+#street-credibility-section {
+  background: #000000; /* elegant dark background */
+  color: #fff;
+  padding: 60px 20px;
+  border-radius: 40px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Clean and readable title */
+#street-credibility-section h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #deff21; /* brand yellow */
+  border-bottom: 3px solid #deff21; /* bottom border only */
+  display: inline-block;
+  padding-bottom: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Images with zoom and uniform glow on hover */
+.custom-img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 15px;
+  margin-top: 30px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+.custom-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 8px rgba(222, 255, 33, 0.6); /* uniform glow all around */
+}
+
+/* Fade-in animation */
+.custom-img:nth-of-type(1) { animation-delay: 0.2s; }
+.custom-img:nth-of-type(2) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+}
+#h6-orari {
+  color: #fff;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #street-credibility-section h2 { font-size: 2rem; }
+  .custom-img { max-width: 95%; margin-top: 20px; }
+}
+@media (max-width: 480px) {
+  #street-credibility-section h2 { font-size: 1.8rem; }
+  .custom-img { max-width: 100%; }
+}
+
+/* Compact square card */
+.square-card {
+  width: 100%;
+  aspect-ratio: 1 / 1;         /* keep square */
+  display: flex;
+  flex-direction: column;
+  background-color: #2e2e2e;      /* pure black */
+  border: 2px solid #deff21;   /* yellow border */
+  border-radius: 8px;
+  overflow: hidden;            /* keeps content inside the border */
+}
+
+/* Image fills the top portion */
+.square-img {
+  width: 100%;
+  height: 60%;                 /* 60% image, 40% info */
+  object-fit: cover;           /* crop nicely */
+}
+
+/* Text area compact */
+.card-body {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;     /* vertically centered */
+}
+
+/* Title */
+.card-title {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Price */
+.price {
+  color: #deff21;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/*Button Buy */
+
+.btn-buy {
+  background-color: #deff21;
+}
+
+.btn-buy:hover{
+  background-color: #deff2175;
+  border-color: #000000;
+}
